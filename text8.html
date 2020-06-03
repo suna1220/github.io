@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>帳號密碼</title>
+</head>
+<body>
+
+	<form>
+  	<fieldset>
+    <legend>行動電話使用調查表</legend>
+
+    <p>
+    	年齡:
+      <input type="radio" name="size" id="size_1" value="small">
+      <label for="size_1">未滿20</label>
+
+      <input type="radio" name="size" id="size_2" value="medium">
+      <label for="size_2">20~29</label>
+
+
+      <input type="radio" name="size" id="size_3" value="large">
+      <label for="size_3">30~39</label>
+
+      <input type="radio" name="size" id="size_4" value="large">
+      <label for="size_4">40~49</label>
+
+      <input type="radio" name="size" id="size_5" value="large">
+      <label for="size_5">50歲以上</label>
+
+    </p>
+    請輸入姓名：<input type="password" pattern="[a-zA-Z0-9]{8,}"><br>
+    請輸入信箱：<input type="email" name="email" value="請輸入信箱..." />
+    <input type="date" name="birthday" /><br>
+    
+  	請勾選你的縣市<br>
+  	<input type="radio" name="location" value="Taipei"> 台北<br>
+	<input type="radio" name="location" value="Taoyuan"> 桃園<br>
+
+	請勾選你的興趣<br>
+	<input type="checkbox" value="Travel" name="Interest"> 旅遊<br>
+	<input type="checkbox" value="Movie" name="Interest"> 電影<br>
+	<input type="checkbox" value="Food" name="Interest"> 美食<br><br>
+
+	<label for="phone">textarea</label><br>
+	<textarea style="width: 300px;height: 100px"></textarea><br>
+
+	<select name="YourLocation">
+　	<option value="Taipei">台北</option>
+　	<option value="Taoyuan">桃園</option>
+　	<option value="Hsinchu">新竹</option>
+　	<option value="Miaoli">苗栗</option>
+	</select>
+	<script language="javascript">
+	function ShowMeDate() {
+　   var Today=new Date();
+　  alert("今天日期是 " + Today.getFullYear()+ " 年 " + (Today.getMonth()+1) + " 月 " + Today.getDate() + " 日");
+  }
+  </script>
+
+  	<button onclick="ShowMeDate()">告訴我今天日期</button>
+    <input type="submit" name="送出表單">
+
+
+</fieldset>   
+</form>
+<script>
+    alert( 'Hello, world!' );
+  </script>
+</body>
+</html>
